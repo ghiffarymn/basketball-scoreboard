@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class = "container">
+        <div class="scoreboard__team--home">
+            <h1>HOME</h1>
+            <h2 class = "scoreboard_score" id="score-home">0</h2>
+            <button class = "scoreboard__button--point1" onclick = "point1home()">+1</button>
+            <button class = "scoreboard__button--point2" onclick = "point2home()">+2</button>
+            <button class = "scoreboard__button--point3" onclick = "point3home()">+3</button>
+        </div>
+        <div class = "scoreboard__team--away">
+            <h1>AWAY</h1>
+            <h2 class = "scoreboard_score" id="score-away">0</h2>
+            <button class = "scoreboard__button--point1" onclick="point1away()">+1</button>
+            <button class = "scoreboard__button--point2" onclick="point2away()">+2</button>
+            <button class = "scoreboard__button--point3" onclick="point3away()">+3</button>
+        </div>
+    </div>
+    <div class="container_bottom">
+        <button class="scoreboard_button--reset" onclick="scoreReset()">RESET</button>
+    </div>
+    
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

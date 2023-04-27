@@ -1,0 +1,70 @@
+@font-face {
+    font-family: CursedTimer;
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(20, 50, 100);
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+}
+
+.scoreboard_score {
+    border: 1px solid white;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: CursedTimer;
+    min-width: 50px;
+    max-width: 200px;
+}
+
+button {
+    background: none;
+    color: white;
+    border: 1px solid orange;
+    border-radius: 6px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: rgb(20, 50, 100) ;
+    background-color: white;
+}
+
+.container_bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.scoreboard_button--reset{  
+    width: 200px;
+    padding: 20px 0;
+}
+
+.scoreboard_button--reset:hover {
+    background: orange;
+}
+
+h1 {
+    color: white;
+}
+
+.scoreboard__team--home > h1{
+    color: orange;
+}
